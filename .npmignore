@@ -4,6 +4,8 @@
 .prettierrc
 /DepotDownloader
 /depots
+/dist/DepotDownloader
+/dist/depots
 /scripts
 /src
 tsconfig.json
