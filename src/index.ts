@@ -10,7 +10,8 @@ import { DepotDownloaderArgs } from "./interfaces/depot-downloader.js";
 import { toKebabCase } from "./utils/to-kebab-case.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const extractPath = join(__dirname, "..", "DepotDownloader");
+const rootPath = join(__dirname, "..");
+const extractPath = join(rootPath, "DepotDownloader");
 const executablePath = join(extractPath, "DepotDownloader");
 
 export function depotDownloader({ debug, ...args }: DepotDownloaderArgs): Promise<string> {
@@ -30,4 +31,8 @@ export function depotDownloader({ debug, ...args }: DepotDownloaderArgs): Promis
             resolve(stdout);
         });
     });
+}
+
+export function resolvePath(...paths: string[]): string {
+    return join(rootPath, ...paths);
 }
