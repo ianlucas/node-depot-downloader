@@ -21,10 +21,11 @@ export function depotDownloader({ debug, ...args }: DepotDownloaderArgs): Promis
                 return typeof value === "boolean" ? `-${key}` : `-${key} ${value}`;
             })
             .join(" ");
+        const command = `${executablePath} ${formattedArgs}`;
         if (debug) {
-            console.log(`${executablePath} ${formattedArgs}`);
+            console.log(command);
         }
-        exec(`${executablePath} ${formattedArgs}`, (error, stdout) => {
+        exec(command, (error, stdout) => {
             if (error) return reject(error);
             resolve(stdout);
         });
