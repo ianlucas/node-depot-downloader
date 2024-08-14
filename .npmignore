@@ -2,9 +2,8 @@
 .gitignore
 .prettierignore
 .prettierrc
-DepotDownloader
-depots
-README.md
-scripts
-src
+/DepotDownloader
+/depots
+/scripts
+/src
 tsconfig.json
