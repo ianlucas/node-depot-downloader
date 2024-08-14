@@ -10,5 +10,5 @@
         "strict": true,
         "target": "ESNext"
     },
-    "include": ["src/*", "scripts/*"]
+    "include": ["src/index.ts", "scripts/postinstall.ts"]
 }

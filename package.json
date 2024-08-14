@@ -6,9 +6,9 @@
     "author": "Ian Lucas",
     "repository": "ianlucas/node-depot-downloader",
     "type": "module",
-    "main": "dist/index.js",
+    "main": "dist/src/index.js",
     "scripts": {
-        "postinstall": "npx tsx scripts/postinstall.ts",
+        "postinstall": "node dist/scripts/postinstall.js",
         "format": "prettier . --write",
         "prepack": "([ -d dist ] && rm -rf dist); tsc",
         "upgrade": "npx npm-check-updates@latest --target minor -u"
