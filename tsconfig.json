@@ -10,5 +10,5 @@
         "strict": true,
         "target": "ESNext"
     },
-    "include": ["src/index.ts"]
+    "include": ["src/*", "scripts/*"]
 }
