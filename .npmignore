@@ -1,0 +1,9 @@
+.git
+.gitignore
+.prettierignore
+.prettierrc
+DepotDownloader
+depots
+README.md
+src
+tsconfig.json

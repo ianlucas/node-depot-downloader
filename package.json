@@ -1,0 +1,27 @@
+{
+    "name": "@ianlucas/depot-downloader",
+    "version": "0.0.0",
+    "description": "DepotDownloader wrapper for TypeScript",
+    "license": "MIT",
+    "author": "Ian Lucas",
+    "repository": "ianlucas/node-depot-downloader",
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+        "postinstall": "npx tsx scripts/postinstall.ts",
+        "format": "prettier . --write",
+        "prepack": "([ -d dist ] && rm -rf dist); tsc",
+        "upgrade": "npx npm-check-updates@latest --target minor -u"
+    },
+    "devDependencies": {
+        "@types/follow-redirects": "^1.14.4",
+        "@types/node": "^18.19.34",
+        "@types/unzipper": "^0.10.10",
+        "prettier": "3.3.1",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "follow-redirects": "^1.15.6",
+        "unzipper": "^0.12.3"
+    }
+}
