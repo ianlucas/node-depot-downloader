@@ -1,6 +1,5 @@
 {
     "name": "@ianlucas/depot-downloader",
-    "version": "0.0.4",
     "description": "A DepotDownloader wrapper for TypeScript",
     "license": "MIT",
     "author": "Ian Lucas",
