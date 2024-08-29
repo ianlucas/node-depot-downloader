@@ -32,7 +32,3 @@ export function depotDownloader({ debug, ...args }: DepotDownloaderArgs): Promis
         });
     });
 }
-
-export function resolvePath(...paths: string[]): string {
-    return join(rootPath, ...paths);
-}
