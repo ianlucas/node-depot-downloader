@@ -128,4 +128,9 @@ export interface DepotDownloaderArgs {
      * -loginid <#> a unique 32-bit integer Steam LogonID in decimal, required if running multiple instances of DepotDownloader concurrently.
      */
     loginid?: number;
+
+    /**
+     * -all-archs download all architecture-specific depots when -app is used.
+     */
+    allArchs?: boolean;
 }

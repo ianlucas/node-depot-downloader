@@ -3,10 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { ChildProcessWithoutNullStreams, spawn } from "child_process";
+import { type ChildProcessWithoutNullStreams, spawn } from "child_process";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
-import { DepotDownloaderArgs } from "./interfaces/depot-downloader.js";
+import { type DepotDownloaderArgs } from "./interfaces/depot-downloader.js";
 import { toKebabCase } from "./utils/to-kebab-case.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
