@@ -115,11 +115,6 @@ export interface DepotDownloaderArgs {
     cellid?: number;
 
     /**
-     * -max-servers <#> maximum number of content servers to use. (default: 20).
-     */
-    maxServers?: number;
-
-    /**
      * -max-downloads <#> maximum number of chunks to download concurrently. (default: 8).
      */
     maxDownloads?: number;
@@ -133,4 +128,19 @@ export interface DepotDownloaderArgs {
      * -all-archs download all architecture-specific depots when -app is used.
      */
     allArchs?: boolean;
+
+    /**
+     * -use-lancache forces downloads over the local network via a Lancache instance.
+     */
+    useLancache?: boolean;
+
+    /**
+     * -branchpassword branch password if applicable.
+     */
+    branchpassword?: string;
+
+    /**
+     * -no-mobile prefer entering a 2FA code instead of prompting to accept in the Steam mobile app.
+     */
+    noMobile?: boolean;
 }

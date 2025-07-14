@@ -12,7 +12,7 @@ import { unzipFile } from "../src/utils/unzip-file.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const BASE_URL = "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.0.0/";
+const BASE_URL = "https://github.com/ianlucas/DepotDownloader/releases/download/DepotDownloader_3.4.0/";
 const platform = getPlatform();
 const zipName = `DepotDownloader-${platform}.zip`;
 const downloadPath = join(__dirname, "..", zipName);
