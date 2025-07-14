@@ -9,6 +9,7 @@
     "scripts": {
         "docs": "typedoc --out docs src/index.ts",
         "format": "prettier . --write",
+        "postinstall": "node dist/scripts/postinstall.js",
         "prepack": "([ -d dist ] && rm -rf dist); tsc",
         "test": "vitest --run --testTimeout 60000",
         "upgrade": "npx npm-check-updates@latest --target minor -u"
